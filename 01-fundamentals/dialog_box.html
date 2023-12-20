@@ -1,0 +1,39 @@
+<!-- JavaScript supports three important dialog boxes.
+These dialog boxes can be used to Raise and Alert, or to get Confirmation
+on any input from the users. There include:
+ -->
+<html>
+    <head>
+        <script type="text/javaScript">
+            // Alert dialog box 
+            function  warn() {
+                alert("This is a warning message!!")
+                document.write("This is a warning message!!")
+            }
+            // Confirmation dialog box
+            function getConfirmation() {
+                let retVal = confirm("Do you want to continue?");
+                if (retVal == true ) {
+                    document.write("User wants to continue");
+                    return true
+                }else {
+                    document.write("User does not want to continue!");
+                    return false
+                }
+            }
+            // Prompt dialog box
+            function  getUserInput() {
+                let retVal = prompt("Enter your name : ");
+                document.write("You have entered : " + retVal);
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the following button to see the result👇.</p>
+        <form>
+            <input type="button" value="alert me" onclick="warn()">
+            <input type="button" value="confirm me" onclick="getConfirmation()">
+            <input type="button" value="prompt me" onclick="getUserInput()">
+        </form>
+    </body>
+</html>
