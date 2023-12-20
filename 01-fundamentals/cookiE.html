@@ -1,0 +1,33 @@
+<!-- WHAT IS A COOKIE?
+    A packet of data sent by a web server to a browser, which is returned by
+    the web browser each time it subsequently accesses the sane server,
+    used to identify the user or track their access to the server
+ -->
+
+<html>
+
+<head>
+    <script type="text/JavaScript">
+        function  writeCookie() {
+            if (document.myform.customer.value == "") {
+                alert("Enter some value!");
+                return ;
+            }
+        }
+            cookieValue = escape(document.myform.customer.value) + ";";
+            document.cookie = "name=" + cookieValue;
+            document.write("Setting cookies : " + "name=" + cookieValue ) ;
+
+    </script>
+</head>
+
+<body>
+    <form action="" name="myform">
+
+        Enter name: <input type="text" name="customer" />
+        <input type="button" value="Set Cookie" onclick="writeCookie();" />
+
+    </form>
+</body>
+
+</html>
