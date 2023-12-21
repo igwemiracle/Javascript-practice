@@ -16,7 +16,6 @@ var newVal = arr.push("isaac")
 var frontVal = arr.unshift("fave")
 console.log(arr);
 
-
 function addTwoNumbers(a, b) {
     return a + b;
 }
