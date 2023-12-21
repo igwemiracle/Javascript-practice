@@ -18,16 +18,16 @@ function useOfSwitchKeyWord(val) {
     switch (val) {
         case 1:
             return "This is a Goat";
-            break
+
         case 2:
             return "This is a Sheep";
-            break
+
         case 3:
             return "This is a Cattle";
-            break
+
         case 4:
             return "This is a Dog";
-            break
+
         default:
             return "Just pick any animal!!";
 
@@ -99,6 +99,34 @@ const add = (function () {
     }
 })();
 
+// Passing function as an argument
+function addTest(a, b) {
+    return a + b;
+}
+
+function collectFunc(operation, a, b) {
+    const result = operation(a, b);
+    console.log(`Result: ${result}`);
+    console.log(`The two numbers used are ${a} and ${b}`);
+}
+
+collectFunc(addTest, 5, 3);
+
+/**
+ *   Arrow Function
+ * This function is created without the "function" keyword.
+ * This is done by using the `let` keyword for initializing a variable
+ * and then assigning it to the parameters in parenthesis followed by
+ * the arrow symbol `=>`, the
+ * expression for the parameters is provided.
+ */
+
+let sumArrow = (a, b) => {
+    return a + b
+}
+console.log("The ARROW-FUNCTION gives the sum = ", sumArrow(3, 6));
+
+
 // Call add() 3 times
 console.log(add());
 console.log(add());
@@ -127,7 +155,3 @@ console.log(ans)
 
 forSwitch = useOfSwitchKeyWord(2)
 console.log(forSwitch)
-
-
-const favNumber = prompt("What's your favourite number?")
-console.log("favNumber")
