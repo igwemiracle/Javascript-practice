@@ -16,5 +16,3 @@ function takeFunction(callBack, name) {
     callBack("Hello" + name);
 }
 takeFunction(printVariable, " Micool");
-
-
