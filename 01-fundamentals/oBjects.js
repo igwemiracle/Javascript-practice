@@ -21,24 +21,52 @@ var book = new Object();
 book.subject = "Perl";
 book.author = "Miracle";
 
+
+
+
 /**
  *  EXAMPLE 2
  * Demostrate how to create an object with a User-defined function.
  * Here the "this" keyword is used to refer to object that has been
  * passed to a function. 
  */
-
-
-
-// class car {
-//     constructor(color, model) {
-//         this.color = color;
-//         this.model = model;
-//     }
-// } OR 👇
+// Define a function that will work as a method
+function addPrice(amoutn) {
+    this.price = amoutn;
+}
 
 function car(color, model) {
     this.color = color;
     this.model = model;
+    this.carPrice = addPrice;
 }
 var myCar = new car("Red", "Toyota")
+myCar.carPrice(6 + " millon dollars")
+
+
+/**
+ * NUMBER OBJECT
+ *  Properties of Number
+ * -- MAX_VALUE   -- NEGATIVE_INFINITY
+ * -- MIN_VALUE   -- POSITIVE_INFINITY
+ * -- NaN         -- prototype
+ * -- constructor
+ */
+
+
+function show_max_value() {
+    var max_val = Number.MAX_VALUE;
+    var min_val = Number.MIN_VALUE;
+
+    document.write("Value of Number.MAX_VALUE : " + max_val);
+    document.write("Value of Number.MAX_VALUE : " + min_val);
+}
+
+
+function show_min_value() {
+    var max_val = Number.MAX_VALUE;
+    var min_val = Number.MIN_VALUE;
+
+    document.write("Value of Number.MAX_VALUE : " + max_val);
+    document.write("Value of Number.MAX_VALUE : " + min_val);
+}
