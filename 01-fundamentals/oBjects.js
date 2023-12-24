@@ -56,17 +56,25 @@ myCar.carPrice(6 + " millon dollars")
 
 function show_max_value() {
     var max_val = Number.MAX_VALUE;
-    var min_val = Number.MIN_VALUE;
 
-    document.write("Value of Number.MAX_VALUE : " + max_val);
-    document.write("Value of Number.MAX_VALUE : " + min_val);
+    alert("Value of Number.MAX_VALUE : " + max_val);
 }
 
 
 function show_min_value() {
-    var max_val = Number.MAX_VALUE;
     var min_val = Number.MIN_VALUE;
 
-    document.write("Value of Number.MAX_VALUE : " + max_val);
-    document.write("Value of Number.MAX_VALUE : " + min_val);
+    alert("Value of Number.MIN_VALUE : " + min_val);
+}
+
+function show_NaN_value() {
+    var dayOfMonth = prompt("Please enter a number ")
+
+    if (dayOfMonth < 1 || dayOfMonth > 31) {
+        dayOfMonth = Number.NaN;
+        alert("Day of the month must be between 1 and 31")
+    }
+
+    document.write("Value of day Of Month " + dayOfMonth);
+
 }
