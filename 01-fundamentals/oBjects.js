@@ -78,3 +78,8 @@ function show_NaN_value() {
     document.write("Value of day Of Month " + dayOfMonth);
 
 }
+
+function show_prototype(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+}
