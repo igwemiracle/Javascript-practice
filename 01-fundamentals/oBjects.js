@@ -53,6 +53,12 @@ myCar.carPrice(6 + " millon dollars")
  * -- constructor
  */
 
+/**
+ * Many Objects like Number, String, Boolean etc has properties
+ *  -- prototype: Allow you to add properties and methods to any object
+ *  -- constructor: which returns a reference to the function that is
+ *      created by the instance's prototype. 
+ */
 
 function show_max_value() {
     var max_val = Number.MAX_VALUE;
