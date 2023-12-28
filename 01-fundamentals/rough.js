@@ -71,6 +71,10 @@ being ${x} by ${y} the new value of x becomes ${x * y}`)
 console.log("Exiting the looping!")
 
 
+//Convert String to Integer or Number
+const num = "1"
+console.log(typeof parseInt(num))
+
 
 
 
