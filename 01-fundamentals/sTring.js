@@ -4,7 +4,7 @@ let greet = "Hello"
 let fullName = "Igwe Miracle"
 
 let congratMessage = `${greet} ${fullName}, I am pleased to inform you that your Application for the \n\
-job as a UX/UI designed has been accepted. Further details will be sent to your email.\n\
+job as a UX/UI developer has been accepted. Further details will be sent to your email.\n\
 Thank You!.`
 console.log(congratMessage);
 console.log("--------------------------------------------------------------------")

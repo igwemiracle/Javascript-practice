@@ -56,3 +56,4 @@ const for_reduce = numbers.reduce((accumulator, current) => {
 }, 5);
 
 console.log(for_reduce);
+prompt("Enter: ")

@@ -44,6 +44,23 @@ var myCar = new car("Red", "Toyota")
 myCar.carPrice(6 + " millon dollars")
 
 
+class User {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+
+    sayHi() {
+        // console.log(this.name)
+        return this.name + " says Hi"
+    }
+}
+//-------------------------------------
+const user1 = new User("Miracle", 20);
+console.log(user1.sayHi())
+console.log(user1)
+//-------------------------------------
+
 /**
  * NUMBER OBJECT
  *  Properties of Number
