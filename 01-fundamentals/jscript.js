@@ -19,3 +19,14 @@ console.log(paragraphWithClasses)
 
 const paragraphWithId = document.querySelector('#para-id')
 console.log(paragraphWithId)
+
+// Add an anchor tag to the HTML and when it is clicked,
+// prevent the default and log something to the console
+
+const linkAttribute = document.querySelector('[data-link]')
+console.log(linkAttribute)
+
+linkAttribute.addEventListener('click', event => {
+    event.preventDefault()
+    console.log("The event has been prevented successfully!!!")
+})
