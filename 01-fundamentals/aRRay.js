@@ -3,11 +3,12 @@
  * of values of a single type.
  * Array Object lets you store multiple values in a single variable.
  * Syntax for creating an Array Object 👇
+ *      var nameOfVar = new Array();
  */
 
 
 /**
- * Making use of some methods of th Array Object.
+ * Making use of some methods of the Array Object.
  * -- concat()  -- map()
  * -- forEach() -- filter()
  * -- find()    -- reduce()
@@ -56,4 +57,3 @@ const for_reduce = numbers.reduce((accumulator, current) => {
 }, 5);
 
 console.log(for_reduce);
-prompt("Enter: ")
