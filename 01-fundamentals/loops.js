@@ -18,6 +18,7 @@ console.log("For Loop : Prints Hi a specified number of times (5)")
 for (i = 0; i < 5; i++) {
     console.log("Hi")
 }
+
 console.log("=============================================")
 // A key advantage of using a "while" loop in this scenario is that
 // it allows for flexible iteration based on a condition.It is particularly
@@ -34,8 +35,8 @@ let Person = {
         }
     }
 }
-// We used the while to if the currentPerson has a friend or not 
-// and print out only the persons with a friend.
+// We used the while to check if the currentPerson has a friend or not 
+// and print out only the person that has a friend.
 
 let currentPerson = Person
 while (currentPerson.friend != null) { //while the current person has a friend.
