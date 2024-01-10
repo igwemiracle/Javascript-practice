@@ -43,3 +43,27 @@ while (currentPerson.friend != null) { //while the current person has a friend.
     console.log(currentPerson.name)
     currentPerson = currentPerson.friend
 }
+console.log("=============================================")
+// Recursion : 
+//  The ability of a function to call itself.
+// For example: Create a recursive function that prints number from 1 - 10
+
+
+
+
+function sumNumbersRecursive(num) {
+    if (num <= 0) return 0
+    return num + sumNumbersRecursive(num - 1);
+}
+
+console.log(sumNumbersRecursive(10));
+
+
+//Print names of people with friends from the "Person" object above.
+function PrintNamesWithFriends(currentPerson) {
+    if (currentPerson.friend == null) return;
+    console.log(currentPerson.name);
+    PrintNamesWithFriends(currentPerson.friend);
+}
+
+PrintNamesWithFriends(Person);
