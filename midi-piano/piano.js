@@ -32,12 +32,12 @@ document.addEventListener('keydown', e => {
 })
 
 // How to figure out a way to stop playing the note when the key is released
-document.addEventListener('keyup', e => {
-    if (e.repeat) return //It prevents multiple events from occurring when the key is pressed.
+document.addEventListener("keyup", e => {
     const keyboardKey = e.code
     const noteDetail = getNoteDetail(keyboardKey)
 
     if (noteDetail == null) return
+
     noteDetail.active = false
     playNotes()
 })
@@ -45,7 +45,6 @@ document.addEventListener('keyup', e => {
 //This gets the specific musical note played based on the pressed key.
 function getNoteDetail(keyboardKey) {
     return NOTE_DETAILS.find(n => `Key${n.key}` === keyboardKey)
-
 }
 
 function playNotes() {
@@ -71,8 +70,8 @@ function startNote(noteDetail, gain) {
     const gainNode = audioContext.createGain()
     gainNode.gain.value = gain
     const oscillator = audioContext.createOscillator()
-    oscillator.frequency = noteDetail.frequency
-    oscillator.type = 'sine'
+    oscillator.frequency.value = noteDetail.frequency
+    oscillator.type = "sine"
     oscillator.connect(gainNode).connect(audioContext.destination)
     oscillator.start()
     noteDetail.oscillator = oscillator
