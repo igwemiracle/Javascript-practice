@@ -54,7 +54,7 @@ form.addEventListener("submit", e => {
         alert_message.classList.add("active")
         setTimeout(() => {
             alert_message.classList.remove("active")
-        }, 1000)
+        }, 2000)
     }
 })
 
