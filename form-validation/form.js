@@ -21,8 +21,8 @@ form.addEventListener("submit", e => {
         errorMessages.push("Username must be at least 6 characters.")
     }
     //      2. Ensure the password is at least 10 characters long
-    if (password.value.length <= 3) {
-        errorMessages.push("Password must be more than 10 characters long")
+    if (password.value.length <= 8) {
+        errorMessages.push("Password must be more than 8 characters long")
     }
     //      3. Ensure the password and confirmation password match
     if (password.value !== passwordConfirm.value) {
