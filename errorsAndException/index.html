@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        // The use of the "onerror" event handler.
+        window.onerror = function (msg, url, line) {
+        document.write ("MESSAGE : " + msg );
+        document.write ("URL : " + url );
+        document.write ("LINE NUMBER : " + line );
+         }
+         
+    </script>
+</head>
+
+<body>
+    <p>Click the following to see the result:</p>
+    <form>
+        <input type="button" value="Click Me" onclick="myFunc();" />
+    </form>
+</body>    
+</html>

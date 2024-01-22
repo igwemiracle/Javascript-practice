@@ -14,12 +14,12 @@
 // Using the "try", "catch", "finally" as well as the "throw" keyword
 // to handle exceptions.
 
-function addNumbers(a, b) {
+function subtractNumbers(a, b) {
     try {
-        if (a > b) {
-            throw ("a is greater than b")
+        if (a >= b) {
+            throw (`subtracts ${b} from ${a}`)
         } else {
-            throw ("a is less than b")
+            throw (`${b} subtracts ${a} with a negative sign`)
         }
     } catch (e) {
         console.log("Error: ", e)
@@ -28,5 +28,4 @@ function addNumbers(a, b) {
     }
 }
 
-
-addNumbers(20, 40)
+subtractNumbers(20, 40)
