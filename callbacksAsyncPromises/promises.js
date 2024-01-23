@@ -25,7 +25,7 @@ myPromise.then((message) => {
 })
 
 // =================================================================
-// Promises are replacement for the callback function, which makes it more easy
+// Promises are replacement for the callback function, which makes it more easier
 // to use. So therefore the below callbacks will be converted to Promises
 
 const userLeft = false
