@@ -7,7 +7,6 @@ function setTimeoutPromise(delay) {
     })
 }
 
-
 // setTimeoutPromise(250).then((message) => {
 //     console.log(message)
 //     return setTimeoutPromise(250)
